@@ -50,8 +50,32 @@ print("la suma de los valores de la lista pares: ",sumaTotal(pares))#debe imprim
 
 
 #4
-""" 
-def ordenados()
-    
-    si cantidad de apariciones es mayor a cero, falso
-    caso contrario compara elementos por menor """
+ 
+#def ordenados(listaNumeros):
+  
+
+
+numeros1= [1, 2, 3, 4, 5]
+numeros2= [2, 5, 5, 14, 1, 6, 3]
+
+numeros2.count(5)
+
+print(numeros2.count(5))
+
+
+#5. Dada una lista de palabras, devolver verdadero si alguna palabra tiene longitud mayor a 7.
+def tieneLongitudMayor7(palabras) -> bool:
+    i=0
+    resultado=False
+    while(i<len(palabras)):
+        resultado=resultado or (len(palabras[i])>=7)
+        i+=1
+    return resultado
+
+palabras1 = ["chau", "gato", "hola", "perro"]
+palabras2 = ["cigarillo", "animal"]
+print(tieneLongitudMayor7(palabras1)) #debe imprimir False
+print(tieneLongitudMayor7(palabras2)) #debe imprimir True
+
+"""  6. Dada una cadena de texto (string), devolver verdadero si esta es palindroma (se lee igual en ambos sentidos), falso en
+caso contrario. """
